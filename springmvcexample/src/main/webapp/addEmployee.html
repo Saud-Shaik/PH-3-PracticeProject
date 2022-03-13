@@ -1,0 +1,31 @@
+
+<html>
+<head>
+  <title>Add Employee Form</title>
+  <style>
+  .error 
+  {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  </style>
+</head>
+ 
+<body>
+  <h2><spring:message" text="Add New Employee" />Add New Employee</h2>
+  <br/>
+  <form:form method="post" modelAttribute="employee">
+    <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+        <td><spring:message code="lbl.email" text="Email Id" />Email Id</td>
+        <td><form:input path="email" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Add Employee"/></td>
+      </tr>
+    </table>
+  </form:form>
+</body>
+</html>
